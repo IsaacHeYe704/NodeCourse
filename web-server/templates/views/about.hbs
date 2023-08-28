@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acerca de</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .about-container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .profile-image {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .description {
+      text-align: center;
+      font-size: 18px;
+      color: #777;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-info p {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .contact-info i {
+      margin-right: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  {{>header}}
+  <div class="about-container">
+    <img class="profile-image" src="profile_picture.jpg" alt="Profile Picture">
+    <div class="name">Isaac Herrera</div>
+    <div class="description">Desarrollador node</div>
+
+    <div class="contact-info">
+      <p><i class="fa fa-envelope"></i> isaac@globant.com</p>
+      <p><i class="fa fa-phone"></i> +315 3502883</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2023 | Todos los derechos reservados | Isaac Herrera
+  </div>
+</body>
+
+</html>
